@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $base-font-family;    
+    line-height: $base-line-height;
+    color: $on-background-color;
+    background-color: $background-color;
+    overflow-wrap: break-word;
+}
+
+main {
+    flex: auto;
+    margin: 8px;
+}
+
+header, footer {
+    flex: none;
+    padding: 8px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+img + em {
+	display: block;
+	font-size: $small-font-size;
+	text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: persify;
+    list-style: persian;
+}
+
+a {
+    text-decoration: none;
+    color: $grey-color-dark;
+}
+
+a:visited {
+    color: $grey-color-light;
+}
+
+pre {
+    direction: ltr;
+    border: 1px solid lighten($on-background-color, 25%);
+    border-radius: 3px;
+    padding: 8px 12px;
+    overflow-x: auto;
+    > code {
+        font-size: 15px;
+        border: 0;
+        padding-left: 0;
+    }
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+    border-collapse: collapse;
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+    td {
+        padding: 5px;
+    }
+    tr:nth-child(even) {
+        background-color: lighten($grey-color-light, 25%);
+    }
+}
+
+form {
+    margin-top: 15px;
+    font-size: .9rem;
+    padding: 15px;
+    label {
+        display: block;
+        margin-bottom: 1em;
+    }
+    input, textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: $base-font-family;
+        font-size: small;
+        border: 1px solid lighten($primary-color, 20%);
+    }
+    input:focus, textarea:focus {
+        border-color: $primary-color;
+    }
+    button[type=submit] {
+        font-family: $alt-font-family;
+    }
+    textarea {
+        height: 10rem;
+        resize: vertical;
+        padding: 10px;
+    }
+    sup.required {
+        color: $primary-color;
+    }
+}
+
+@counter-style abjad {
+    system: additive;
+    range: 1 1000;
+    additive-symbols: 1000 "\63A", 900 "\638", 800 "\636", 700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634", 200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639", 60 "\633", 50 "\646", 40 "\645", 30 "\644", 20 "\6A9", 10 "\649", 9 "\637", 8 "\62D", 7 "\632", 6 "\648", 5 "\FEEB", 4 "\62F", 3 "\62C", 2 "\628", 1 "\627\644\641";
+}
+
+@counter-style abjad-persian {
+    system: additive;
+    range: 1 1000;
+    additive-symbols: 1000 "\63A", 900 "\638", 800 "\636", 700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634", 200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639", 60 "\633", 50 "\646", 40 "\645", 30 "\644", 20 "\6AF", 10 "\649", 9 "\637", 8 "\62D", 7 "\698", 6 "\648", 5 "\FEEB", 4 "\62F", 3 "\686", 2 "\67E", 1 "\627\644\641";
+    suffix: ". ";
+    pad: 3 '-';
+}
+
+@counter-style persify {
+    system: alphabetic;
+    symbols: '۱' '۲' '۳' '۴' '۵' '۶' '۷' '۸' '۹';
+    suffix: ". ";
+}

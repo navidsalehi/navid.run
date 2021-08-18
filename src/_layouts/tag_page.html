@@ -1,0 +1,23 @@
+---
+layout: default
+robots: noindex
+sitemap: false
+---
+<div class="tag-page">
+  <h1 class="page-heading">❖ &nbsp; {{ page.tag }}</h1>
+  <ul class="post-list-mini">
+    {% for post in page.posts %}
+      <li class="post-list-item">
+        <span class="list-meta-col">
+        {{ post.date | jdate: "%d %b %Y" | habify }}
+        </span>
+        <span class="list-line"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr >
+  <div id="tag-cloud">
+    {{ site | tag_cloud }}
+  </div>
+</div>
+
