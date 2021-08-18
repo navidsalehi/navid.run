@@ -1,10 +1,10 @@
 source: src
-title: مهدی صادقی
+title: نوید صالحی پور
 motto: در مورد نرم‌افزار و ایده‌هایم
-author: مهدی صادقی
-email: mehdi@mehdix.ir
+author: نوید صالحی پور
+email: navid@navidx.run
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://mehdix.ir # the base hostname & protocol for your site
+url: https://navid.run # the base hostname & protocol for your site
 keywords: کامپیوتر برنامه‌نویسی پایتون تکنولوژی مهندسی ایران وب
 copyright: Commons Attribution 4.0 International
 description: >
@@ -16,13 +16,13 @@ long_description: > # this means to ignore newlines until "baseurl:"
   بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
 
 github:
-  username: mehdisadeghi
-  repository: mehdix.ir
+  username: navidsalehi
+  repository: navid.run
 favicon: assets/img/me.png
 logo: assets/img/me.png
 
 permalink: :title:output_ext
-timezone: Europe/Berlin
+timezone: Asia/Tehran
 
 paginate: 20
 paginate_path: /page:num/
