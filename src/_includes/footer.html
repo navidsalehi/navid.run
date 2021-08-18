@@ -9,14 +9,7 @@
     <p id="footer-description">{{ site.long_description }}</p>
 
     <ul class="social-media-list">
-      {% if site.github.username %}
-      <li>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/{{ site.github.username }}">
-          <span class="username social-media-text">پروژه‌ها</span>
-        </a>
-      </li>
-      {% endif %}
+      
       <li>
         <i class="fas fa-rss"></i>
         <a href="{{ 'feed.xml' | absolute_url }}">
